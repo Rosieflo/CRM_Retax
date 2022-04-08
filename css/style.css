@@ -4,9 +4,11 @@
     width: 1400px; height: 900px;
     background-color: #fff;
     margin: 0px auto;
+    padding-top: 20px;
 }
 
 header{
+    float: left;
     width: 220px; height: 900px;
     background-color: #f6f6f6;
     border:1px solid #e8e8e8;
@@ -128,3 +130,138 @@ input{
 .fa-gear{margin-right: 13px;}
 .fa-circle-question{margin-right: 12px;}
 .fa-right-from-bracket{margin-right: 12px;}
+
+/* 프로필 섹션 */
+.top_profile{
+    float: left;
+    width: 1176px; height: 46px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-left:none;
+    position: relative;
+}
+.fa-angles-left{
+    position: absolute;
+        top: 12px;
+        left: 20px;
+    color: #4c4c4c;
+    font-size: 22px;
+}
+.fa-bell{
+    position: absolute;
+        top: 12px;
+        right: 18px;
+    color: #4c4c4c;
+    font-size: 22px;
+    margin-right: 50px;
+}
+.profile_s img{
+    position: absolute;
+        top: 8px;
+        right: 20px;
+    border-radius: 40px;
+}
+
+/* 프로필 네임 */
+.profile_name{
+    float: left;
+    width: 1176px; height: 74px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    border-left:none;
+}
+.profile_name span{
+    color: #4c4c4c;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 74px;
+    margin-left: 19px;
+}
+.fa-angle-right{margin: 0 10px 0 10px;}
+
+/* 프로필 네임 */
+.profile_detail{
+    float: left;
+    width: 280px; height: 778px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-left: none;
+    border-top: none;
+}
+.detail_01{
+    padding: 24px 0 24px 24px;
+    height: 200px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.detail_01 img{
+    border-radius: 80px;
+    margin-bottom: 18px;
+}
+.detail_01 span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.detail_01 p{
+    color: #b1b1b1;
+}
+.p_icon{
+    width: 50px; height: 20px;
+    background-color: #f5fff1;
+    border: 1px solid #e0f8d4;
+    border-radius: 10px;
+    color: #44bb09;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+/* 프로필 상세 */
+.detail_02{padding: 24px 0 0 24px;}
+.fa-location-dot{
+    float: left;
+    width: 44px; height: 34px;
+    background-color: #f5f5f5;
+    color: #722ed1;
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.dot span{
+    float: left;
+    width: 170px;
+    color: #b1b1b1;
+    padding-left: 14px;
+}
+.dot p{
+    float: left;
+    width: 160px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 7px 0 0 14px;
+}
+
+.phone{padding-top: 70px;}
+.fa-phone{
+    float: left;
+    width: 44px; height: 34px;
+    background-color: #f5f5f5;
+    color: #722ed1;
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.phone span{
+    float: left;
+    width: 100px;
+    color: #b1b1b1;
+    padding-left: 14px;
+}
+.phone p{
+    float: left;
+    width: 160px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 7px 0 0 14px;
+}
