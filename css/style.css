@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+#wrap{
+    width: 1400px; height: 900px;
+    background-color: #fff;
+    margin: 0px auto;
+}
+
+header{
+    width: 220px; height: 900px;
+    background-color: #f6f6f6;
+    border:1px solid #e8e8e8;
+}
+
+/* 상단 로고 */
+h1 a{
+    position: relative;
+        top: 14px;
+        left: 26px;
+    transition: 0.3s;
+}
+h1 a:hover{color: #722ed1;}
+
+/* 검색박스 */
+.search{
+    position:relative;
+    width: 144px;
+    padding: 30px 0 0 26px;
+}
+input{
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.fa-magnifying-glass{
+  position : absolute;
+    top: 40px;
+    right: -10px;
+  color: #bebebe;
+}
+
+/* 내비게이션 */
+.gnb{
+    height: 600px;
+    margin-top: 24px;
+    border-top: 1px solid #e8e8e8;
+}
+.gnb ul{padding: 8px 0 0 26px;}
+.gnb ul li{
+    position: relative;
+    line-height: 54px;
+}
+.gnb ul li::before{
+    content: "";
+    position: absolute;
+        top: -9px;
+        right: 0px;
+    display: block;
+    width: 3px;
+    height: 0px;
+    background-color: #722ed1;
+    transition: 0.4s;
+}
+.gnb ul li:hover:before{
+    height: 55px;
+}
+.gnb ul li a{
+    color: #3f3f3f;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.gnb ul li a:hover{color: #722ed1;}
+
+/* 내비 하단 */
+.gnb_sub ul li{
+    position: relative;
+    padding-left: 26px;
+    line-height: 40px;
+}
+.gnb_sub ul li::before{
+    content: "";
+    position: absolute;
+        top: 0px;
+        right: 0px;
+    display: block;
+    width: 3px;
+    height: 0px;
+    background-color: #722ed1;
+    transition: 0.4s;
+}
+.gnb_sub ul li:hover:before{
+    height: 54px;
+}
+.gnb_sub ul li:last-child:hover:before{
+    height: 70px;
+}
+.gnb_sub ul li a{
+    color: #3f3f3f;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.gnb_sub ul li a:hover{color: #722ed1;}
+.gnb_sub ul li:first-child{
+    padding-top: 12px;
+    border-top: 1px solid #e8e8e8;
+}
+.gnb_sub ul li:nth-child(2){
+    padding-bottom: 12px;
+}
+.gnb_sub ul li:last-child{
+    padding-top: 12px;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* 아이콘 간격 */
+.fa-border-all{margin-right: 10px;}
+.fa-circle-check{margin-right: 10px;}
+.fa-calendar{margin-right: 12px;}
+.fa-address-card{margin-right: 10px;}
+.fa-user-group{margin-right: 8px;}
+.fa-address-book{margin-right: 12px;}
+.fa-circle-user{margin-right: 12px;}
+.fa-file{margin-right: 16px;}
+.fa-gear{margin-right: 13px;}
+.fa-circle-question{margin-right: 12px;}
+.fa-right-from-bracket{margin-right: 12px;}
