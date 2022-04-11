@@ -268,3 +268,187 @@ input{
 .detail_btn a span:hover{
     color: #722ed1;
 }
+
+/* 서브 메뉴 */
+.sub_menu{
+    float: left;
+    width: 895px; height: 48px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    border-left:none;
+    line-height: 48px;
+}
+.sub_menu ul li:first-child{margin-left: 24px;}
+.sub_menu ul li a{
+    float: left;
+    color: #b1b1b1;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 34px;
+    transition: 0.2s;
+}
+.sub_menu ul li a:hover{
+    color: #722ed1;
+    border-top: 3px solid #722ed1;
+}
+
+/* To do 카드 */
+.sub_card{
+    float: left;
+    width: 298px; height: 729px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e8e8e8;
+}
+.todo{
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+}
+.todo_dot{
+    float: left;
+    width: 8px; height: 8px;
+    border-radius: 10px;
+    background-color: #2a56e9;
+    margin: 22px 8px 0 24px;
+}
+.todo span{
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+.fa-plus{
+    float: right;
+    color: #b1b1b1;
+    font-size: 13px;
+    margin: 20px 24px 0 0;
+}
+
+/* 카드1 */
+.card1, .card2, .card3, .card4, .card5, .card6{
+    width: 260px; height: 144px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #e6e6e6;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.card1 span, .card2 span, .card3 span, .card4 span, .card5 span, .card6 span{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 24px 0 0 16px;
+}
+.card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p{
+    margin: 10px 0 0 16px;
+    color: #8f8f8f;
+}
+.card_icon{
+    width: 100px; height: 20px;
+    background-color: #f1f8fc;
+    border: 1px solid #5060ed;
+    border-radius: 10px;
+    color: #5060ed;
+    text-align: center;
+    margin: 44px 0 0 16px;
+}
+.card2 .card_icon, .card3 .card_icon{
+    width: 70px;
+    background-color: #fff7e7;
+    border: 1px solid #ff9b35;
+    color: #ff9b35;
+}
+.card4 .card_icon{
+    width: 90px;
+    background-color: #f6fcff;
+    border: 1px solid #35c6ff;
+    color: #35c6ff;
+}
+.box{
+    position: relative;
+        top: 12px;
+}
+.fa-ellipsis{
+    color: #a5a5a5;
+    font-size: 17px;
+    float: right;
+    margin-right: 15px;    
+}
+
+/* In progress 카드 */
+.sub_card2{
+    float: left;
+    width: 298px; height: 729px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+.pro{
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+}
+.pro_dot{
+    float: left;
+    width: 8px; height: 8px;
+    border-radius: 10px;
+    background-color: #f3ab15;
+    margin: 22px 8px 0 24px;
+}
+.pro span{
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+.fa-plus{
+    float: right;
+    color: #b1b1b1;
+    font-size: 13px;
+    margin: 20px 24px 0 0;
+}
+.card5 .card_icon{
+    width: 60px; height: 20px;
+    background-color: #f5fff1;
+    border: 1px solid #e0f8d4;
+    border-radius: 10px;
+    color: #44bb09;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+/* Complited 카드 */
+.sub_card3{
+    float: left;
+    width: 298px; height: 729px;
+    background-color: #fafafa;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+}
+.com{
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+}
+.com_dot{
+    float: left;
+    width: 8px; height: 8px;
+    border-radius: 10px;
+    background-color: #f3ab15;
+    margin: 22px 8px 0 24px;
+}
+.com span{
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+.fa-plus{
+    float: right;
+    color: #b1b1b1;
+    font-size: 13px;
+    margin: 20px 24px 0 0;
+}
+.card6 .card_icon{
+    width: 90px;
+    background-color: #f6fcff;
+    border: 1px solid #35c6ff;
+    color: #35c6ff;
+}
