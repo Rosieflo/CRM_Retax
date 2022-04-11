@@ -216,8 +216,11 @@ input{
 }
 
 /* 프로필 상세 */
-.detail_02{padding: 24px 0 0 24px;}
-.fa-location-dot{
+.detail_02{
+    height: 440px;
+    padding: 24px 0 0 24px;
+}
+.fa-location-dot, .fa-phone, .fa-envelope, .fa-calendar-check{
     float: left;
     width: 44px; height: 34px;
     background-color: #f5f5f5;
@@ -227,41 +230,41 @@ input{
     text-align: center;
     padding-top: 10px;
 }
-.dot span{
-    float: left;
-    width: 170px;
-    color: #b1b1b1;
-    padding-left: 14px;
-}
-.dot p{
-    float: left;
-    width: 160px;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 7px 0 0 14px;
-}
-
-.phone{padding-top: 70px;}
-.fa-phone{
-    float: left;
-    width: 44px; height: 34px;
-    background-color: #f5f5f5;
-    color: #722ed1;
-    font-size: 22px;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 10px;
-}
-.phone span{
+.dot span, .phone span, .mail span, .calender span{
     float: left;
     width: 100px;
     color: #b1b1b1;
     padding-left: 14px;
 }
-.phone p{
+.dot p, .phone p, .mail p, .calender p{
     float: left;
     width: 160px;
     font-weight: bold;
     font-size: 14px;
     padding: 7px 0 0 14px;
+}
+.phone, .mail, .calender{padding-top: 70px;}
+
+/* 프로필 상세 버튼 */
+.detail_btn{
+    width: 234px; height: 40px;
+    background-color: #722ed1;
+    margin: 0px auto;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.4s;
+}
+.detail_btn a span{
+    display: block;
+    color: #fff;
+    line-height: 40px;
+}
+.fa-paper-plane{margin-right: 4px;}
+
+.detail_btn:hover{
+    border: 1px solid #722ed1;
+    background-color: #fff;
+}
+.detail_btn a span:hover{
+    color: #722ed1;
 }
