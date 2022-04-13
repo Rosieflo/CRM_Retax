@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/style.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 영역 -->
+    <header>
+        <h1>
+            <a href="#" title="상단 로고">Retax</a>
+        </h1>
+        
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <nav class="gnb">
+            <ul>
+                <li><a href="#" title="Dashboard">
+                    <i class="fa-solid fa-border-all"></i> Dashboard</a></li>
+                <li><a href="#" title="Tasks">
+                    <i class="fa-solid fa-circle-check"></i> Tasks</a></li>
+                <li><a href="#" title="Calender">
+                    <i class="fa-regular fa-calendar"></i> Calender</a></li>
+                <li><a href="#" title="Employees">
+                    <i class="fa-regular fa-address-card"></i> Employees</a></li>
+                <li><a href="#" title="Customers">
+                    <i class="fa-solid fa-user-group"></i> Customers</a></li>
+                <li><a href="#" title="Cases">
+                    <i class="fa-regular fa-address-book"></i> Cases</a></li>
+                <li><a href="#" title="Leads">
+                    <i class="fa-solid fa-circle-user"></i> Leads</a></li>
+                <li><a href="#" title="Requests">
+                    <i class="fa-regular fa-file"></i> Requests</a></li>
+            </ul>
+        </nav>
+
+        <div class="gnb_sub">
+            <ul>
+                <li><a href="#" title="Settings">
+                    <i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li><a href="#" title="Help">
+                    <i class="fa-solid fa-circle-question"></i> Help</a></li>
+                <li><a href="#" title="Logout">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 컨텐츠 영역 -->
+    <article>
+        <section class="top_profile">
+            <i class="fa-solid fa-angles-left"></i>
+            <i class="fa-regular fa-bell"></i>
+            <div class="profile_s">
+                <img src="./img/profile.png" alt="상단 프로필 이미지">
+            </div>
+        </section>
+
+        <section class="profile_name">
+            <span>Employees <i class="fa-solid fa-angle-right"></i> Wade Warren</span>
+        </section>
+
+        <section class="profile_detail">
+            <div class="detail_01">
+                <img src="./img/profile2.jpg" alt="프로필 이미지">
+                <div class="p_icon">Active</div>
+                <span>Wade Warren</span>
+                <p>Consultant &#x00B7; Sales Manager</p>
+            </div>
+
+            <div class="detail_02">
+                <ul>
+                    <li class="dot">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Location</span>
+                        <p>Tel Aviv, Israel</p>
+                    </li>
+
+                    <li class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Phone number</span>
+                        <p>+82 10-8926-4673</p>
+                    </li>
+
+                    <li class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>E-mail</span>
+                        <p>Warren@example.com</p>
+                    </li>
+
+                    <li class="calender">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Start Date</span>
+                        <p>04 - Apr - 2022</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="detail_btn">
+                <a href="#" title="">
+                    <span><i class="fa-solid fa-paper-plane"></i> Send to mail</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="sub_menu">
+          <ul>
+              <li><a href="#" title="Tasks">Tasks</a></li>
+              <li><a href="#" title="Customers">Customers</a></li>
+              <li><a href="#" title="Calls VOIP">Calls VOIP</a></li>
+              <li><a href="#" title="Leads">Leads</a></li>
+              <li><a href="#" title="Requests">Requests</a></li>
+          </ul>
+        </section>
+
+        <section class="sub_card">
+            <div class="todo">
+                <div class="todo_dot"></div>
+                <span>To do</span>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="card">
+                <div class="card1">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Send leads documents</span>
+                        <p>Deadline : 22-Jun-2021</p>
+                        <div class="card_icon">In a meeting</div>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Update customer profile</span>
+                        <p>Deadline : 23-Jun-2021</p>
+                        <div class="card_icon">Out Sick</div>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Call to customer</span>
+                        <p>Deadline : 26-Jun-2021</p>
+                        <div class="card_icon">Out Sick</div>
+                    </div>
+                </div>
+
+                <div class="card4">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Send to customer</span>
+                        <p>Deadline : 30-Jun-2021</p>
+                        <div class="card_icon">Complited</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub_card2">
+            <div class="pro">
+                <div class="pro_dot"></div>
+                <span>In progress</span>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="card">
+                <div class="card3">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Call to customer</span>
+                        <p>Deadline : 26-Jun-2021</p>
+                        <div class="card_icon">Out Sick</div>
+                    </div>
+                </div>
+
+                <div class="card5">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Send to customer</span>
+                        <p>Deadline : 30-Jun-2021</p>
+                        <div class="card_icon">Check</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub_card3">
+            <div class="com">
+                <div class="com_dot"></div>
+                <span>Complited</span>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="card">
+                <div class="card1">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Send leads documents</span>
+                        <p>Deadline : 22-Jun-2021</p>
+                        <div class="card_icon">In a meeting</div>
+                    </div>
+                </div>
+
+                <div class="card6">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Update customer profile</span>
+                        <p>Deadline : 23-Jun-2021</p>
+                        <div class="card_icon">Complited</div>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="box">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>Call to customer</span>
+                        <p>Deadline : 26-Jun-2021</p>
+                        <div class="card_icon">Out Sick</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <!-- 푸터 영역 -->
+    </div>
+</body>
+</html>

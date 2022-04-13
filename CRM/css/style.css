@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+#wrap{
+    width: 1400px; height: 900px;
+    background-color: #fff;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+header{
+    float: left;
+    width: 220px; height: 900px;
+    background-color: #f6f6f6;
+    border:1px solid #e8e8e8;
+}
+
+/* 상단 로고 */
+h1 a{
+    position: relative;
+        top: 14px;
+        left: 26px;
+    transition: 0.3s;
+}
+h1 a:hover{color: #722ed1;}
+
+/* 검색박스 */
+.search{
+    position:relative;
+    width: 144px;
+    padding: 30px 0 0 26px;
+}
+input{
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.fa-magnifying-glass{
+  position : absolute;
+    top: 40px;
+    right: -10px;
+  color: #bebebe;
+}
+
+/* 내비게이션 */
+.gnb{
+    height: 600px;
+    margin-top: 24px;
+    border-top: 1px solid #e8e8e8;
+}
+.gnb ul{padding: 8px 0 0 26px;}
+.gnb ul li{
+    position: relative;
+    line-height: 54px;
+}
+.gnb ul li::before{
+    content: "";
+    position: absolute;
+        top: -9px;
+        right: 0px;
+    display: block;
+    width: 3px;
+    height: 0px;
+    background-color: #722ed1;
+    transition: 0.4s;
+}
+.gnb ul li:hover:before{
+    height: 55px;
+}
+.gnb ul li a{
+    color: #3f3f3f;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.gnb ul li a:hover{color: #722ed1;}
+
+/* 내비 하단 */
+.gnb_sub ul li{
+    position: relative;
+    padding-left: 26px;
+    line-height: 40px;
+}
+.gnb_sub ul li::before{
+    content: "";
+    position: absolute;
+        top: 0px;
+        right: 0px;
+    display: block;
+    width: 3px;
+    height: 0px;
+    background-color: #722ed1;
+    transition: 0.4s;
+}
+.gnb_sub ul li:hover:before{
+    height: 54px;
+}
+.gnb_sub ul li:last-child:hover:before{
+    height: 70px;
+}
+.gnb_sub ul li a{
+    color: #3f3f3f;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.gnb_sub ul li a:hover{color: #722ed1;}
+.gnb_sub ul li:first-child{
+    padding-top: 12px;
+    border-top: 1px solid #e8e8e8;
+}
+.gnb_sub ul li:nth-child(2){
+    padding-bottom: 12px;
+}
+.gnb_sub ul li:last-child{
+    padding-top: 12px;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* 아이콘 간격 */
+.fa-border-all{margin-right: 10px;}
+.fa-circle-check{margin-right: 10px;}
+.fa-calendar{margin-right: 12px;}
+.fa-address-card{margin-right: 10px;}
+.fa-user-group{margin-right: 8px;}
+.fa-address-book{margin-right: 12px;}
+.fa-circle-user{margin-right: 12px;}
+.fa-file{margin-right: 16px;}
+.fa-gear{margin-right: 13px;}
+.fa-circle-question{margin-right: 12px;}
+.fa-right-from-bracket{margin-right: 12px;}
+
+/* 프로필 섹션 */
+.top_profile{
+    float: left;
+    width: 1176px; height: 46px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-left:none;
+    position: relative;
+}
+.fa-angles-left{
+    position: absolute;
+        top: 12px;
+        left: 20px;
+    color: #4c4c4c;
+    font-size: 22px;
+}
+.fa-bell{
+    position: absolute;
+        top: 12px;
+        right: 18px;
+    color: #4c4c4c;
+    font-size: 22px;
+    margin-right: 50px;
+}
+.profile_s img{
+    position: absolute;
+        top: 8px;
+        right: 20px;
+    border-radius: 40px;
+}
+
+/* 프로필 네임 */
+.profile_name{
+    float: left;
+    width: 1176px; height: 74px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    border-left:none;
+}
+.profile_name span{
+    color: #4c4c4c;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 74px;
+    margin-left: 19px;
+}
+.fa-angle-right{margin: 0 10px 0 10px;}
+
+/* 프로필 네임 */
+.profile_detail{
+    float: left;
+    width: 280px; height: 778px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-left: none;
+    border-top: none;
+}
+.detail_01{
+    padding: 24px 0 24px 24px;
+    height: 200px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.detail_01 img{
+    border-radius: 80px;
+    margin-bottom: 18px;
+}
+.detail_01 span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.detail_01 p{
+    color: #b1b1b1;
+}
+.p_icon{
+    width: 50px; height: 20px;
+    background-color: #f5fff1;
+    border: 1px solid #e0f8d4;
+    border-radius: 10px;
+    color: #44bb09;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+/* 프로필 상세 */
+.detail_02{
+    height: 440px;
+    padding: 24px 0 0 24px;
+}
+.fa-location-dot, .fa-phone, .fa-envelope, .fa-calendar-check{
+    float: left;
+    width: 44px; height: 34px;
+    background-color: #f5f5f5;
+    color: #722ed1;
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.dot span, .phone span, .mail span, .calender span{
+    float: left;
+    width: 100px;
+    color: #b1b1b1;
+    padding-left: 14px;
+}
+.dot p, .phone p, .mail p, .calender p{
+    float: left;
+    width: 160px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 7px 0 0 14px;
+}
+.phone, .mail, .calender{padding-top: 70px;}
+
+/* 프로필 상세 버튼 */
+.detail_btn{
+    width: 234px; height: 40px;
+    background-color: #722ed1;
+    margin: 0px auto;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.4s;
+}
+.detail_btn a span{
+    display: block;
+    color: #fff;
+    line-height: 40px;
+}
+.fa-paper-plane{margin-right: 4px;}
+
+.detail_btn:hover{
+    border: 1px solid #722ed1;
+    background-color: #fff;
+}
+.detail_btn a span:hover{
+    color: #722ed1;
+}
+
+/* 서브 메뉴 */
+.sub_menu{
+    float: left;
+    width: 895px; height: 48px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    border-left:none;
+    line-height: 48px;
+}
+.sub_menu ul li:first-child{margin-left: 24px;}
+.sub_menu ul li a{
+    float: left;
+    color: #b1b1b1;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 34px;
+    transition: 0.2s;
+}
+.sub_menu ul li a:hover{
+    color: #722ed1;
+    border-top: 3px solid #722ed1;
+}
+
+/* To do 카드 */
+.sub_card{
+    float: left;
+    width: 298px; height: 729px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e8e8e8;
+}
+.todo{
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+}
+.todo_dot{
+    float: left;
+    width: 8px; height: 8px;
+    border-radius: 10px;
+    background-color: #2a56e9;
+    margin: 22px 8px 0 24px;
+}
+.todo span{
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+.fa-plus{
+    float: right;
+    color: #b1b1b1;
+    font-size: 13px;
+    margin: 20px 24px 0 0;
+}
+
+/* 카드1 */
+.card1, .card2, .card3, .card4, .card5, .card6{
+    width: 260px; height: 144px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #e6e6e6;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.card1 span, .card2 span, .card3 span, .card4 span, .card5 span, .card6 span{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 24px 0 0 16px;
+}
+.card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p{
+    margin: 10px 0 0 16px;
+    color: #8f8f8f;
+}
+.card_icon{
+    width: 100px; height: 20px;
+    background-color: #f1f8fc;
+    border: 1px solid #5060ed;
+    border-radius: 10px;
+    color: #5060ed;
+    text-align: center;
+    margin: 44px 0 0 16px;
+}
+.card2 .card_icon, .card3 .card_icon{
+    width: 70px;
+    background-color: #fff7e7;
+    border: 1px solid #ff9b35;
+    color: #ff9b35;
+}
+.card4 .card_icon{
+    width: 90px;
+    background-color: #f6fcff;
+    border: 1px solid #35c6ff;
+    color: #35c6ff;
+}
+.box{
+    position: relative;
+        top: 12px;
+}
+.fa-ellipsis{
+    color: #a5a5a5;
+    font-size: 17px;
+    float: right;
+    margin-right: 15px;    
+}
+
+/* In progress 카드 */
+.sub_card2{
+    float: left;
+    width: 298px; height: 729px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+.pro{
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+}
+.pro_dot{
+    float: left;
+    width: 8px; height: 8px;
+    border-radius: 10px;
+    background-color: #f3ab15;
+    margin: 22px 8px 0 24px;
+}
+.pro span{
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+.fa-plus{
+    float: right;
+    color: #b1b1b1;
+    font-size: 13px;
+    margin: 20px 24px 0 0;
+}
+.card5 .card_icon{
+    width: 60px; height: 20px;
+    background-color: #f5fff1;
+    border: 1px solid #e0f8d4;
+    border-radius: 10px;
+    color: #44bb09;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+/* Complited 카드 */
+.sub_card3{
+    float: left;
+    width: 298px; height: 729px;
+    background-color: #fafafa;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+}
+.com{
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+}
+.com_dot{
+    float: left;
+    width: 8px; height: 8px;
+    border-radius: 10px;
+    background-color: #f3ab15;
+    margin: 22px 8px 0 24px;
+}
+.com span{
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+.fa-plus{
+    float: right;
+    color: #b1b1b1;
+    font-size: 13px;
+    margin: 20px 24px 0 0;
+}
+.card6 .card_icon{
+    width: 90px;
+    background-color: #f6fcff;
+    border: 1px solid #35c6ff;
+    color: #35c6ff;
+}
